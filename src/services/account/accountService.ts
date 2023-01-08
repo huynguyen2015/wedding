@@ -1,0 +1,27 @@
+import { IsTenantAvaibleInput } from './dto/isTenantAvailableInput'
+import { RegisterInput } from './dto/registerInput'
+import IsTenantAvaibleOutput from './dto/isTenantAvailableOutput'
+import { RegisterOutput } from './dto/registerOutput'
+import http from '../httpService'
+
+class AccountService {
+  public async isTenantAvailable(
+    isTenantAvaibleInput: IsTenantAvaibleInput
+  ): Promise<IsTenantAvaibleOutput> {
+    const result = await http.post(
+      'api/services/app/Account/IsTenantAvailable',
+      isTenantAvaibleInput
+    )
+    return result
+  }
+
+  public async register(registerInput: RegisterInput): Promise<RegisterOutput> {
+    const result = await http.post(
+      'api/services/app/Account/Register',
+      registerInput
+    )
+    return result
+  }
+}
+
+export default new AccountService()

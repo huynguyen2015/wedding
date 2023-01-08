@@ -1,0 +1,62 @@
+node_modules
+debug.log
+uploads
+error.log
+output.log
+
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/dist
+/tmp
+build/
+build.zip
+
+# dependencies
+/node_modules
+/bower_components
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+*.launch
+.settings/
+.vs/
+obj/
+bin/
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage/*
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# e2e
+/e2e/*.js
+/e2e/*.map
+
+#System Files
+.DS_Store
+Thumbs.db
+
+# VS files
+/O1.AngularUI.csproj.user
+project.lock.json
+Properties/launchSettings.json
+/OnePlace.O1.AngularUI.xproj.user
+
+src/shared/._.DS_Store
+src/app/main/EmpComp/o1-booking-amenities/._.DS_Store
+src/app/main/EmpComp/._.DS_Store
+src/app/main/._.DS_Store
+src/app/._.DS_Store
+src/._styles.css
+src/._.DS_Store
+._.DS_Store
+
+.eslintcache

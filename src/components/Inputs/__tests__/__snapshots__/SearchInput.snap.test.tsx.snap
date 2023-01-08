@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchInput To match snapshot search input 1`] = `
+<input
+  className="ant-input ant-input-lg full-width"
+  onBlur={[Function]}
+  onChange={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  placeholder="Currency input"
+  type="text"
+  value="1"
+/>
+`;
