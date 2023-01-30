@@ -1,12 +1,13 @@
-@content9: content9;
 @text-color: rgba(0, 0, 0, 0.85);
 @text-color2: #697b8c;
-.@{content9}-wrapper {
+.schedule-wrapper {
   padding-bottom: 64px;
+  background: white;
+
   &.home-page-wrapper {
     overflow: initial;
   }
-  .@{content9} {
+  .schedule {
     min-height: 800px;
     padding: 64px 0 0;
   }
@@ -19,7 +20,7 @@
       left: 50%;
       top: 0;
       width: 0;
-      height: ~"calc(100% - 108px)";
+      height: ~'calc(100% - 108px)';
       margin: 34px 0;
       border-left: 2px #ebedf0 dashed;
     }
@@ -82,7 +83,7 @@
     .block-icon {
       position: absolute;
       left: -40px;
-      transform: translateX(~"calc(-50% + 1px)");
+      transform: translateX(~'calc(-50% + 1px)');
     }
     .block-content {
       width: 300px;
@@ -94,9 +95,9 @@
 }
 
 @media screen and (max-width: 767px) {
-  .@{content9}-wrapper {
+  .schedule-wrapper {
     padding-bottom: 0;
-    .@{content9} {
+    .schedule {
       padding: 64px 24px;
     }
     .timeline {
@@ -126,7 +127,8 @@
         padding-left: 40px;
         margin: auto;
       }
-      .block-name, .block-post {
+      .block-name,
+      .block-post {
         display: inline-block;
       }
       .block-name {

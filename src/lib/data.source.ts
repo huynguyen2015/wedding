@@ -13,7 +13,37 @@ export const Nav20DataSource = {
       {
         name: 'linkNav',
         to: 'id',
-        children: 'Menu',
+        children: 'TRANG CHỦ',
+        className: 'menu-item'
+      },
+      {
+        name: 'linkNav',
+        to: '#introduce',
+        children: 'GIỚI THIỆU',
+        className: 'menu-item'
+      },
+      {
+        name: 'linkNav',
+        to: '#schedule',
+        children: 'LỊCH TRÌNH',
+        className: 'menu-item'
+      },
+      {
+        name: 'linkNav',
+        to: '#gallery',
+        children: 'HÌNH ẢNH',
+        className: 'menu-item'
+      },
+      {
+        name: 'linkNav',
+        to: '#invitation',
+        children: 'THIỆP MỜI',
+        className: 'menu-item'
+      },
+      {
+        name: 'linkNav',
+        to: '#confirm',
+        children: 'XÁC NHẬN THAM DỰ',
         className: 'menu-item'
       }
     ]
@@ -270,7 +300,9 @@ export const Content80DataSource = {
   }
 }
 export const Content90DataSource = {
-  wrapper: { className: 'home-page-wrapper content9-wrapper' },
+  wrapper: {
+    className: ''
+  },
   page: { className: 'home-page content9' },
   titleWrapper: {
     className: 'title-wrapper',

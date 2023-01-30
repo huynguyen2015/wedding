@@ -1,43 +1,48 @@
-@content8: content8;
-.@{content8}-wrapper {
-  &.home-page-wrapper {
-    overflow: initial;
-    width: ~"calc(100% - 112px)";
+.confirmation-wrapper {
+  overflow: initial;
+  width: 100%;
+  min-height: 878px;
+  margin: auto;
+  .section-title-wrapper {
+    background: linear-gradient(#8eaeba 50%, #f9f9f9 50%) no-repeat;
     min-height: 878px;
-    margin: auto;
-    border-radius: 4px;
-    box-shadow: 0 32px 32px rgba(34, 94, 222, 0.08);
-    background: #fff;
-    & .home-page {
-      margin-top: -220px;
-      padding: 64px 24px;
-      overflow: hidden;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      z-index: -1;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 210px 100vw 0 0;
+      border-color: @primary-color transparent transparent transparent;
+      margin-top: -1px;
     }
   }
+
   .content-wrapper {
     margin-top: 72px;
-    .@{content8}-block-wrapper {
+    .confirmation-block-wrapper {
       margin-bottom: 60px;
     }
-    .@{content8}-block {
+    .confirmation-block {
       width: 100%;
       max-width: 192px;
       margin: auto;
     }
-    .@{content8}-img {
-      border-radius: 8px;
-      overflow: hidden;
+    .confirmation-img {
       width: 100%;
       img {
         width: 100%;
         display: block;
-        &[src=""] {
+        &[src=''] {
           background: linear-gradient(to top right, #d6defc, #fff);
           padding-bottom: 100%;
         }
       }
     }
-    .@{content8}-title {
+    .confirmation-title {
       font-size: 20px;
       color: #0d1a26;
       font-weight: 400;
@@ -45,7 +50,7 @@
       text-align: center;
       white-space: nowrap;
     }
-    .@{content8}-content {
+    .confirmation-content {
       text-align: center;
       white-space: nowrap;
       font-size: 14px;
@@ -55,18 +60,18 @@
 }
 
 @media screen and (max-width: 767px) {
-  .@{content8}-wrapper.home-page-wrapper {
+  .confirmation-wrapper.home-page-wrapper {
     padding-bottom: 0;
     box-shadow: none;
     width: 100%;
-    .@{content8} {
+    .confirmation {
       &.home-page {
         margin: auto;
         padding-bottom: 0;
       }
     }
     .content-wrapper {
-      .@{content8}-block {
+      .confirmation-block {
         max-width: 240px;
       }
     }

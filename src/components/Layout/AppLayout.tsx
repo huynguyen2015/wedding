@@ -19,29 +19,20 @@ export const AppContext = createContext({})
 const { Content } = Layout
 
 const AppLayout = inject(Stores.SessionStore)(
-  observer(({ sessionStore }: IAppLayoutProps) => {
+  observer(() => {
     const location = useLocation()
     const { pathname } = location
     const [appData, setAppData] = useState({})
     const [loading, setLoading] = useState(true)
 
     useEffect(() => {
-      const initAppData = async () => {
-        await sessionStore!.getCurrentLoginInformations()
-        abp.auth.allPermissions = abp.auth.grantedPermissions =
-          sessionStore!.currentLogin.permitted_actions
-        abp.session = { currentLogin: sessionStore!.currentLogin }
-      }
       setAppData({})
       setLoading(false)
-      initAppData()
     }, [])
 
     const layout = (
       <Layout style={{ minHeight: '100vh' }}>
-        <Layout.Header className="wrap-header">
-          <Header isMobile={false} dataSource={Nav20DataSource} />
-        </Layout.Header>
+        <Header isMobile={false} dataSource={Nav20DataSource} />
         <Content className="wrap-content">
           <Routes>
             <Route

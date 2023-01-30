@@ -4,9 +4,110 @@ div > .templates-wrapper > .jrhtw9ph4a-editor_css {
   box-shadow: none;
 }
 .home-page > .header2-menu > .active {
-  color: #ffffff;
+  color: @primary-color;
 }
 .home-page > .header2-menu > .menu-item:hover {
   color: #e0e7ff;
   border-bottom-color: #ffffff;
+}
+
+// Section title
+.section-title-wrapper {
+  font-size: 38pt;
+  line-height: 38pt;
+  text-align: center;
+  color: @primary-color;
+  font-family: 'Playfair Display', serif;
+  position: relative;
+  padding: 70px 0;
+  background-color: #fff;
+  z-index: 0;
+
+  .section-title {
+    text-align: center;
+    padding-bottom: 35px;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: 189px;
+      max-width: 189px;
+      height: 24px;
+      background-repeat: no-repeat;
+      background-position-x: center;
+      opacity: 0.5;
+      background-image: url('~/src/assets/images/section-title-split-black.svg');
+    }
+  }
+  .section-title.light {
+    color: #fff;
+    &::after {
+      background-image: url('~/src/assets/images/section-title-split.svg') !important;
+    }
+  }
+}
+.bg-color-overlay::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #3d5963;
+  z-index: -1;
+  -khtml-opacity: 0.8;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+}
+.section-divider-top-1 {
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 130px 100vw 0 0;
+    border-color: #fff transparent transparent transparent;
+  }
+  &.off-section {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 130px;
+  }
+}
+
+.section-divider-bottom-2 {
+  padding-bottom: 170px !important;
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 150px 0 0 100vw;
+    border-color: transparent transparent transparent #fff;
+  }
+}
+.padding-divider-top {
+  padding-top: 170px;
+}
+.parallax-background {
+  width: 100%;
+  background-attachment: fixed;
+  background-repeat: repeat-y;
+  -webkit-background-size: cover;
+  background-size: cover;
 }

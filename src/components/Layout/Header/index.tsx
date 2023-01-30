@@ -28,11 +28,8 @@ class Header extends Component<IProps> {
     const navChildren = Object.keys(navData).map((key, i) => {
       const item = navData[key]
       const tag = Link
-      const tagProps = { href: '' }
-      if (item.to && item.to.match(/\//g)) {
-        tagProps.href = item.to
-        delete item.to
-      }
+      const tagProps = { pathname: item.to }
+
       return createElement(
         tag,
         { ...item, ...tagProps, key: i.toString() },
