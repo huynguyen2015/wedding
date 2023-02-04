@@ -1,0 +1,46 @@
+.loading-wrapper {
+  display: block;
+  .loading-heart {
+    fill: transparent;
+    stroke: #8eaeba;
+    stroke-width: 11;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: inline-block;
+    z-index: 11;
+    position: relative;
+    svg {
+      overflow: visible;
+      width: 11rem;
+      path {
+        stroke-dashoffset: 1550;
+        stroke-dasharray: 1550;
+        transform-origin: center;
+        animation: stroke-animation 2s ease-in-out infinite forwards;
+      }
+    }
+    .preloader-title {
+      font-size: 20pt;
+      color: #73777b;
+      line-height: 0.9;
+      position: absolute;
+      top: 41px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: 'Playfair Display', serif;
+      small {
+        color: #73777b;
+        line-height: 0.9;
+        font-size: 12pt;
+      }
+    }
+  }
+}
+@keyframes stroke-animation {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

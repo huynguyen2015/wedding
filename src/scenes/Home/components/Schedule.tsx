@@ -1,12 +1,11 @@
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack'
 import QueueAnim from 'rc-queue-anim'
-
 interface IProps {
   dataSource: any
   isMobile: boolean
 }
 
-const Schedule = ({ dataSource, isMobile }: IProps) => {
+const Gallery = ({ dataSource, isMobile }: IProps) => {
   const getBlockChildren = (block, i) => {
     const item = block.children
     const textWrapper = (
@@ -59,21 +58,17 @@ const Schedule = ({ dataSource, isMobile }: IProps) => {
 
   const children = dataSource.block.children.map(getBlockChildren)
   return (
-    <section id="schedule" className="home-page-wrapper schedule-wrapper">
-      <div
-        className="section-title-wrapper parallax-background bg-color-overlay section-divider-bottom-2 padding-divider-top"
-        style={{ backgroundPosition: 'center -176px' }}>
-        <div className="section-divider-top-1 off-section"></div>
+    <section id="schedule" className="schedule-wrapper home-page-wrapper">
+      <div className="section-title-wrapper">
         <div className="container">
-          <h1 className="section-title light">Our love story</h1>
+          <h1 className="section-title black">Lịch trình di chuyển</h1>
         </div>
       </div>
-
-      <div className="home-page schedule">
+      <div className="schedule">
         <div className="timeline">{children}</div>
       </div>
     </section>
   )
 }
 
-export default Schedule
+export default Gallery

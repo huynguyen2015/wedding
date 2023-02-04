@@ -49,7 +49,7 @@ class Header extends Component<IProps> {
           <TweenOne
             animation={{ x: -30, type: 'from', ease: 'easeOutQuad' }}
             {...dataSource.logo}>
-            <img width="100%" src={dataSource.logo.children} alt="img" />
+            <img width="100%" src="assets/images/wedding-ring.png" alt="img" />
           </TweenOne>
           {isMobile && (
             <div

@@ -6,9 +6,9 @@ import {
   Content90DataSource
 } from '../../lib/data.source'
 import AboutUs from './components/AboutUs'
-import Schedule from './components/Schedule'
+import Schedule from './components/Gallery'
 import Location from './components/Location'
-import Gallery from './components/Gallery'
+import Gallery from './components/Schedule'
 import Confirmation from './components/Confirmation'
 import Invitation from './components/Invitation'
 
@@ -17,7 +17,7 @@ const Home = () => {
     <>
       <Banner />
       <AboutUs />
-      <Schedule dataSource={Content90DataSource} isMobile={false} />
+      <Schedule dataSource={Content80DataSource} isMobile={false} />
       <Invitation />
       <Location
         key="Content10_0"
@@ -26,7 +26,7 @@ const Home = () => {
       />
       <Gallery
         key="Content8_0"
-        dataSource={Content80DataSource}
+        dataSource={Content90DataSource}
         isMobile={false}
       />
       <Confirmation />

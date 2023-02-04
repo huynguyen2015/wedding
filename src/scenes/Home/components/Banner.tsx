@@ -4,8 +4,9 @@ import 'rc-texty/assets/index.css'
 const Banner = () => {
   const children = (
     <section
+      id="banner"
       className="bg-slideshow section-divider-bottom-1 zs-enabled overlay-plain"
-      style={{ minHeight: '844px' }}>
+      style={{ minHeight: '720px' }}>
       <div className="zs-slideshow">
         <div className="zs-slides">
           <div className="zs-slide zs-slide-2 active"></div>
@@ -27,7 +28,7 @@ const Banner = () => {
               data-animation-direction="from-right"
               data-animation-delay="300"
               className="animate-from-right animation-from-right">
-              Isabella
+              Quốc Huy
             </span>
             <small
               data-animation-direction="from-top"
@@ -39,7 +40,7 @@ const Banner = () => {
               data-animation-direction="from-left"
               data-animation-delay="300"
               className="animate-from-left animation-from-left">
-              Andrew
+              Quỳnh Hoa
             </span>
           </h1>
 
@@ -47,7 +48,7 @@ const Banner = () => {
             className="hero-subtitle light animate-fade animation-fade"
             data-animation-direction="fade"
             data-animation-delay="1000">
-            SEPT <span>24</span> 2022
+            Tháng 3 <span>12</span> 2023
           </div>
 
           <div
@@ -56,10 +57,9 @@ const Banner = () => {
             className="animate-fade animation-fade">
             <a
               href="https://www.wiselythemes.com/html/neela/index.html#rsvp"
-              className="btn btn-light scrollto"
-              style={{ width: '119px' }}>
+              className="btn btn-light scrollto">
               <span className="h-lines"></span>
-              <span className="v-lines"></span>RSVP
+              <span className="v-lines"></span>Tham dự nhé bạn
             </a>
           </div>
         </div>

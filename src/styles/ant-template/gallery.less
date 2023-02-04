@@ -3,11 +3,21 @@
   overflow: initial;
   width: 100%;
   margin: auto;
+  position: relative;
   .section-title-wrapper {
     background-color: #f9f9f9;
+    .section-title {
+      margin-bottom: 0;
+    }
   }
-  &.gallery {
+  .gallery {
     overflow: hidden;
+    background-color: white;
+    .gallery-content {
+      max-width: 1320px;
+      margin: auto;
+      min-height: 500px;
+    }
   }
   .content-wrapper {
     justify-content: center;

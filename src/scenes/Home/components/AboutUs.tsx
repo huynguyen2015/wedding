@@ -1,41 +1,6 @@
-// import TweenOne from &apos;rc-tween-one&apos;
-// import OverPack from 'rc-scroll-anim/lib/ScrollOverPack'
-// import { Col } from &apos;antd&apos;
 import QueueAnim from 'rc-queue-anim'
-// import { getChildrenToRender } from &apos;../../../lib/utils&apos;
-
-// interface IProps {
-//   dataSource: any
-//   isMobile: boolean
-// }
 
 const AboutUs = () => {
-  // const getDelay = (e, b) => (e % b) * 100 + Math.floor(e / b) * 100 + b * 100
-
-  // const getBlockChildren = (item, i) => {
-  //   const children = item.children
-  //   const delay = isMobile ? i * 50 : getDelay(i, 24 / item.md)
-  //   const liAnim = {
-  //     y: 30,
-  //     opacity: 0,
-  //     type: &apos;from&apos;,
-  //     ease: &apos;easeOutQuad&apos;,
-  //     delay
-  //   }
-  //   return (
-  //     <TweenOne component={Col} animation={liAnim} key={i.toString()} {...item}>
-  //       <div {...children}>
-  //         <div className="image-wrapper" {...children.img}>
-  //           <img src={children.img.children} alt="img" />
-  //         </div>
-  //         <h2 {...children.title}>{children.title.children}</h2>
-  //         <div {...children.content}>{children.content.children}</div>
-  //       </div>
-  //     </TweenOne>
-  //   )
-  // }
-
-  // const children = dataSource.block.children.map(getBlockChildren)
   return (
     <section id="about-us">
       <QueueAnim delay={300} type="bottom">
@@ -133,19 +98,11 @@ const AboutUs = () => {
               data-animation-direction="from-bottom"
               data-animation-delay="300">
               <h3>
-                <small>We are</small>Getting Married
+                <small>Chúng tôi</small>Kết hôn
               </h3>
               <p>
-                Today and always, beyond tomorrow, I need you beside me, always
-                as my best friend, lover and forever soul mate. Lorem ipsum
-                dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
-                porttitor venenatis. Vestibulum sit amet est nisl. Vestibulum
-                iaculis finibus sem nec condimentum. Quisque nulla orci, aliquet
-                sit amet sem eget, pellentesque euismod enim. Aenean quis nisl
-                at est consequat elementum sed vel turpis. Phasellus dignissim
-                sit amet orci vitae mattis. Phasellus a imperdiet ligula,
-                efficitur dignissim ex. Mauris placerat aliquet sem commodo
-                molestie.
+                Hôm nay, mãi mãi và cả ngày mai, anh cần em bên cạnh, luôn là
+                người bạn thân nhất, người tình và mãi mãi là tri kỉ
               </p>
               <img
                 src="./Neela - Responsive One_Multi-Page Wedding HTML5 Template_files/signature-2.png"
@@ -157,23 +114,6 @@ const AboutUs = () => {
       </QueueAnim>
     </section>
   )
-}
-
-{
-  /* <div {...dataSource.wrapper}>
-<div {...dataSource.page}>
-  <div {...dataSource.titleWrapper}>
-    {dataSource.titleWrapper.children.map(getChildrenToRender)}
-  </div>
-  <OverPack {...dataSource.OverPack}>
-    <QueueAnim type="bottom" key="img">
-      <Row {...dataSource.block} key="img">
-        {children}
-      </Row>
-    </QueueAnim>
-  </OverPack>
-</div>
-</div> */
 }
 
 export default AboutUs

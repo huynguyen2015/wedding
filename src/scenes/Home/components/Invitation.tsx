@@ -6,7 +6,7 @@ const Invitation = () => {
         style={{ backgroundPosition: 'center -176px' }}>
         <div className="section-divider-top-1 off-section"></div>
         <div className="container">
-          <h1 className="section-title light">Invitation</h1>
+          <h1 className="section-title light">Thiệp mời</h1>
           <div className="invitation-content-wrapper">
             <div
               className="invite neela-style animate-from-left animation-from-left"
@@ -22,23 +22,22 @@ const Invitation = () => {
 
               <div className="invite_info">
                 <h2>
-                  Isabella <small>&amp;</small> Andrew
+                  Huy <small>&amp;</small> Hoa
                 </h2>
 
                 <div className="uppercase">
-                  Request the honor of your presence on their wedding day
+                  Sự hiện diện của các bạn là niềm vinh hạnh của chúng tôi
                 </div>
                 <div className="date">
-                  September 24, 2022<small>at 03:00 pm</small>
+                  Tháng ba 12, 2023<small>lúc 11:00 sáng</small>
                 </div>
                 <div className="uppercase">
                   <div style={{ lineHeight: 'normal' }}>
-                    At Birchwood Church
+                    Cẩm Giang, Cẩm Thắng, Tây Ninh
                   </div>
-                  4181 Birchwood Ave Seal Beach, CA
                 </div>
 
-                <h5>Reception to follow</h5>
+                <h5>Tham dự với chúng tôi</h5>
               </div>
             </div>
           </div>

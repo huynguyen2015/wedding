@@ -21,13 +21,13 @@ const Location = ({ dataSource }: IProps) => {
   }
 
   return (
-    <section className="home-page-wrapper location-wrapper">
+    <section id="location" className="home-page-wrapper location-wrapper">
       <QueueAnim type="scale">
         <div
           className="section-title-wrapper"
           style={{ backgroundPosition: 'center -176px' }}>
           <div className="container">
-            <h1 className="section-title black">Location</h1>
+            <h1 className="section-title black">Hôn lễ được cử hành tại</h1>
           </div>
           <div className="container map-info-container">
             <div

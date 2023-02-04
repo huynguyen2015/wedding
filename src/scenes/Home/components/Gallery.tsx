@@ -8,7 +8,7 @@ interface IProps {
   isMobile: boolean
 }
 
-const Gallery = ({ dataSource, isMobile }: IProps) => {
+const Schedule = ({ dataSource, isMobile }: IProps) => {
   const getDelay = (e, b) => (e % b) * 100 + Math.floor(e / b) * 100 + b * 100
 
   const getBlockChildren = (item, i) => {
@@ -36,15 +36,19 @@ const Gallery = ({ dataSource, isMobile }: IProps) => {
       </TweenOne>
     )
   }
-
   const children = dataSource.block.children.map(getBlockChildren)
   return (
-    <section id="gallery" className="gallery-wrapper">
-      <div className="section-title-wrapper">
+    <section id="gallery" className="home-page-wrapper gallery-wrapper">
+      <div
+        className="section-title-wrapper parallax-background bg-color-overlay section-divider-bottom-2 padding-divider-top"
+        style={{ backgroundPosition: 'center -176px' }}>
+        <div className="section-divider-top-1 off-section"></div>
         <div className="container">
-          <h1 className="section-title black">Hình ảnh</h1>
+          <h1 className="section-title light">Hình cưới</h1>
         </div>
-        <div className="container gallery">
+      </div>
+      <div className="gallery">
+        <div className="gallery-content">
           <OverPack playScale="0.3">
             <QueueAnim type="bottom" key="img">
               <Row className="content-wrapper" key="img">
@@ -58,4 +62,4 @@ const Gallery = ({ dataSource, isMobile }: IProps) => {
   )
 }
 
-export default Gallery
+export default Schedule

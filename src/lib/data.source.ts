@@ -12,37 +12,37 @@ export const Nav20DataSource = {
     children: [
       {
         name: 'linkNav',
-        to: 'id',
+        to: 'banner',
         children: 'TRANG CHỦ',
         className: 'menu-item'
       },
       {
         name: 'linkNav',
-        to: '#introduce',
+        to: 'introduce',
         children: 'GIỚI THIỆU',
         className: 'menu-item'
       },
       {
         name: 'linkNav',
-        to: '#schedule',
-        children: 'LỊCH TRÌNH',
-        className: 'menu-item'
-      },
-      {
-        name: 'linkNav',
-        to: '#gallery',
+        to: 'gallery',
         children: 'HÌNH ẢNH',
         className: 'menu-item'
       },
       {
         name: 'linkNav',
-        to: '#invitation',
+        to: 'invitation',
         children: 'THIỆP MỜI',
         className: 'menu-item'
       },
       {
         name: 'linkNav',
-        to: '#confirm',
+        to: 'schedule',
+        children: 'LỊCH TRÌNH',
+        className: 'menu-item'
+      },
+      {
+        name: 'linkNav',
+        to: 'confirmation',
         children: 'XÁC NHẬN THAM DỰ',
         className: 'menu-item'
       }
