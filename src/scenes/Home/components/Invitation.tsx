@@ -9,7 +9,7 @@ const Invitation = () => {
           <h1 className="section-title light">Thiệp mời</h1>
           <div className="invitation-content-wrapper">
             <div
-              className="invite neela-style animate-from-left animation-from-left"
+              className="invite border-effect animate-from-left animation-from-left"
               data-animation-direction="from-left"
               data-animation-delay="100">
               <span className="h-lines"></span>
@@ -29,7 +29,7 @@ const Invitation = () => {
                   Sự hiện diện của các bạn là niềm vinh hạnh của chúng tôi
                 </div>
                 <div className="date">
-                  Tháng ba 12, 2023<small>lúc 11:00 sáng</small>
+                  12 Tháng Ba, 2023<small>lúc 11:00 sáng</small>
                 </div>
                 <div className="uppercase">
                   <div style={{ lineHeight: 'normal' }}>

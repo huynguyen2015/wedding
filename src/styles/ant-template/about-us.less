@@ -28,6 +28,7 @@
         img {
           width: 100%;
           height: auto;
+          max-height: 620px;
           z-index: -1;
           position: relative;
           transition: all 0.3s;
@@ -207,9 +208,8 @@
       line-height: 105px;
       text-align: center;
       z-index: 2;
-      -webkit-border-radius: 100%;
-      -moz-border-radius: 100%;
       border-radius: 100%;
+      font-size: 24pt;
 
       i::before {
         line-height: 105px;
@@ -237,11 +237,14 @@
           font-size: 18pt;
         }
       }
+      img.signature {
+        width: 90%;
+      }
     }
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   #about-us {
     margin-top: 0;
     padding: 0;
@@ -254,6 +257,11 @@
         &:last-child {
           margin-bottom: 40px;
         }
+      }
+    }
+    .about-us-desc-wrapper {
+      .about-us-desc {
+        width: 85%;
       }
     }
   }

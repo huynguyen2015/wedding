@@ -11,21 +11,12 @@ class Footer extends PureComponent<IProps> {
     const { ...props } = this.props
     const { dataSource } = props as any
     return (
-      <div {...props} {...dataSource.wrapper}>
-        <OverPack {...dataSource.OverPack}>
-          {/* <TweenOne {...dataSource.links}>
-            {dataSource.links.children.map((item, i) => {
-              return (
-                <a key={i.toString()} {...item}>
-                  <img src={item.children} height="100%" alt="img" />
-                </a>
-              )
-            })}
-          </TweenOne> */}
+      <div className="home-page-wrapper footer2-wrapper">
+        <OverPack className="home-page footer2" playScale="0.05">
           <TweenOne
             animation={{ x: '+=30', opacity: 0, type: 'from' }}
             key="copyright"
-            {...dataSource.copyright}>
+            className="copyright">
             {dataSource.copyright.children.map((item, i) =>
               React.createElement(
                 item.name.indexOf('title') === 0 ? 'h1' : 'div',

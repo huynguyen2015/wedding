@@ -12,7 +12,7 @@ export const Nav20DataSource = {
     children: [
       {
         name: 'linkNav',
-        to: 'introduce',
+        to: 'banner',
         children: 'GIỚI THIỆU',
         className: 'menu-item'
       },

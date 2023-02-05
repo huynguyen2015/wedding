@@ -1,6 +1,5 @@
 import QueueAnim from 'rc-queue-anim'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHeart } from '@fortawesome/free-solid-svg-icons'
+import { HeartOutlined } from '@ant-design/icons'
 
 const AboutUs = () => {
   return (
@@ -14,12 +13,12 @@ const AboutUs = () => {
               data-animation-delay="300">
               <div className="image">
                 <img src="./assets/images/groom.jpg" />
-                <div className="hover-info neela-style">
+                <div className="hover-info border-effect">
                   <span className="h-lines"></span>
                   <span className="v-lines"></span>
                   <div className="content">
                     <h3>
-                      Andrew Miller<small>The Groom</small>
+                      Quốc Huy<small>The Groom</small>
                     </h3>
                     <p>
                       I am so incredibly blessed and excited to spend everyday
@@ -27,17 +26,17 @@ const AboutUs = () => {
                     </p>
                     <ul className="sn-icons">
                       <li>
-                        <a href="https://www.wiselythemes.com/html/neela/index.html#">
+                        <a href="https://www.facebook.com/nbchuy">
                           <i className="fab fa-instagram-square"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="https://www.wiselythemes.com/html/neela/index.html#">
+                        <a href="https://www.facebook.com/nbchuy">
                           <i className="fab fa-twitter-square"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="https://www.wiselythemes.com/html/neela/index.html#">
+                        <a href="https://www.facebook.com/nbchuy">
                           <i className="fab fa-facebook-square"></i>
                         </a>
                       </li>
@@ -51,8 +50,7 @@ const AboutUs = () => {
               className="divider-about-us animate-fade animation-fade"
               data-animation-direction="fade"
               data-animation-delay="500">
-              {/* <i className="icon-two-hearts"></i> */}
-              <FontAwesomeIcon icon={faHeart} />
+              <HeartOutlined />
             </div>
 
             <div
@@ -61,12 +59,12 @@ const AboutUs = () => {
               data-animation-delay="400">
               <div className="image">
                 <img src="./assets/images/bride.jpg" />
-                <div className="hover-info neela-style">
+                <div className="hover-info border-effect">
                   <span className="h-lines"></span>
                   <span className="v-lines"></span>
                   <div className="content">
                     <h3>
-                      Isabella Walker<small>The Bride</small>
+                      Quỳnh Hoa<small>The Bride</small>
                     </h3>
                     <p>
                       She&apos;s everything I&apos;ve always dreamed of and
@@ -74,17 +72,17 @@ const AboutUs = () => {
                     </p>
                     <ul className="sn-icons">
                       <li>
-                        <a href="https://www.wiselythemes.com/html/neela/index.html#">
+                        <a href="https://www.facebook.com/Q.h2605">
                           <i className="fab fa-instagram-square"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="https://www.wiselythemes.com/html/neela/index.html#">
+                        <a href="https://www.facebook.com/Q.h2605">
                           <i className="fab fa-twitter-square"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="https://www.wiselythemes.com/html/neela/index.html#">
+                        <a href="https://www.facebook.com/Q.h2605">
                           <i className="fab fa-facebook-square"></i>
                         </a>
                       </li>
@@ -104,12 +102,13 @@ const AboutUs = () => {
                 <small>Chúng tôi</small>Kết hôn
               </h3>
               <p>
-                Hôm nay, mãi mãi và cả ngày mai, anh cần em bên cạnh, luôn là
-                người bạn thân nhất, người tình và mãi mãi là tri kỉ
+                Hôm nay, ngày mai và cả ngày sau nữa, anh cần em bên cạnh, luôn
+                là người bạn thân nhất, người tình và mãi mãi là tri kỉ
               </p>
               <img
                 src="assets/images/signature.png"
-                alt="Andrew and Isabella"
+                alt="Quoc Huy & Quynh Hoa"
+                className="signature"
               />
             </div>
           </div>

@@ -4,8 +4,10 @@ import 'rc-texty/assets/index.css'
 import { Link } from 'rc-scroll-anim'
 
 const Banner = () => {
-  const children = (
-    <section
+  return (
+    <QueueAnim
+      type={['bottom', 'top']}
+      delay={200}
       id="banner"
       className="bg-slideshow section-divider-bottom-1 zs-enabled overlay-plain">
       <div className="zs-slideshow">
@@ -16,7 +18,7 @@ const Banner = () => {
       <div
         className="banner-info"
         style={{ zIndex: 2, marginTop: '19.4415px' }}>
-        <div className="hero-wrapper v-center">
+        <div className="info-wrapper v-center">
           <h2
             data-animation-direction="fade"
             data-animation-delay="600"
@@ -24,7 +26,7 @@ const Banner = () => {
             Save the Date
           </h2>
 
-          <h1 className="hero-title light">
+          <h1 className="info-title light">
             <span
               data-animation-direction="from-right"
               data-animation-delay="300"
@@ -46,7 +48,7 @@ const Banner = () => {
           </h1>
 
           <div
-            className="hero-subtitle light animate-fade animation-fade"
+            className="info-subtitle light animate-fade animation-fade"
             data-animation-direction="fade"
             data-animation-delay="1000">
             Tháng 3 <span>12</span> 2023
@@ -74,14 +76,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
-    </section>
-  )
-  return (
-    <section id="introduce">
-      <QueueAnim type={['bottom', 'top']} delay={200}>
-        {children}
-      </QueueAnim>
-    </section>
+    </QueueAnim>
   )
 }
 export default Banner
