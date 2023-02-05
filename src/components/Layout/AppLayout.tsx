@@ -1,6 +1,7 @@
 import './AppLayout.less'
 import { useState, createContext, useEffect } from 'react'
 import { Navigate, Routes, Route, useLocation } from 'react-router-dom'
+import { enquireScreen } from 'enquire-js'
 import Footer from './Footer'
 import Header from './Header'
 import { Layout } from 'antd'
@@ -11,6 +12,10 @@ import SessionStore from 'src/stores/sessionStore'
 import Stores from '../../stores/storeIdentifier'
 import { Footer20DataSource, Nav20DataSource } from '../../lib/data.source'
 
+let isMobile = false
+enquireScreen((b) => {
+  isMobile = b
+})
 export interface IAppLayoutProps {
   sessionStore?: SessionStore
 }
@@ -32,7 +37,7 @@ const AppLayout = inject(Stores.SessionStore)(
 
     const layout = (
       <Layout style={{ minHeight: '100vh' }}>
-        <Header isMobile={false} dataSource={Nav20DataSource} />
+        <Header isMobile={isMobile} dataSource={Nav20DataSource} />
         <Content className="wrap-content">
           <Routes>
             <Route

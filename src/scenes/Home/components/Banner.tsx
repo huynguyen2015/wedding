@@ -1,12 +1,13 @@
 import QueueAnim from 'rc-queue-anim'
+import TweenOne from 'rc-tween-one'
 import 'rc-texty/assets/index.css'
+import { Link } from 'rc-scroll-anim'
 
 const Banner = () => {
   const children = (
     <section
       id="banner"
-      className="bg-slideshow section-divider-bottom-1 zs-enabled overlay-plain"
-      style={{ minHeight: '720px' }}>
+      className="bg-slideshow section-divider-bottom-1 zs-enabled overlay-plain">
       <div className="zs-slideshow">
         <div className="zs-slides">
           <div className="zs-slide zs-slide-2 active"></div>
@@ -55,12 +56,21 @@ const Banner = () => {
             data-animation-direction="fade"
             data-animation-delay="1000"
             className="animate-fade animation-fade">
-            <a
-              href="https://www.wiselythemes.com/html/neela/index.html#rsvp"
-              className="btn btn-light scrollto">
-              <span className="h-lines"></span>
-              <span className="v-lines"></span>Tham dự nhé bạn
-            </a>
+            <TweenOne
+              animation={{
+                height: 0,
+                duration: 300,
+                onComplete: (e) => {
+                  e.target.style.height = 'auto'
+                },
+                ease: 'easeInOutQuad'
+              }}
+              moment={300}>
+              <Link className="btn btn-light scrollto" to="confirmation">
+                <span className="h-lines"></span>
+                <span className="v-lines"></span>Tham dự nhé bạn
+              </Link>
+            </TweenOne>
           </div>
         </div>
       </div>

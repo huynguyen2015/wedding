@@ -1,4 +1,6 @@
 import QueueAnim from 'rc-queue-anim'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHeart } from '@fortawesome/free-solid-svg-icons'
 
 const AboutUs = () => {
   return (
@@ -49,7 +51,8 @@ const AboutUs = () => {
               className="divider-about-us animate-fade animation-fade"
               data-animation-direction="fade"
               data-animation-delay="500">
-              <i className="icon-two-hearts"></i>
+              {/* <i className="icon-two-hearts"></i> */}
+              <FontAwesomeIcon icon={faHeart} />
             </div>
 
             <div
@@ -105,7 +108,7 @@ const AboutUs = () => {
                 người bạn thân nhất, người tình và mãi mãi là tri kỉ
               </p>
               <img
-                src="./Neela - Responsive One_Multi-Page Wedding HTML5 Template_files/signature-2.png"
+                src="assets/images/signature.png"
                 alt="Andrew and Isabella"
               />
             </div>

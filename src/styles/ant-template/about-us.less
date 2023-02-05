@@ -240,3 +240,21 @@
     }
   }
 }
+
+@media (max-width: 480px) {
+  #about-us {
+    margin-top: 0;
+    padding: 0;
+    background: white;
+    .about-wrapper {
+      flex-direction: column;
+      .element {
+        width: 100%;
+        margin-bottom: 0;
+        &:last-child {
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+}

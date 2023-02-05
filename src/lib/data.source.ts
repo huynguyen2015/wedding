@@ -12,12 +12,6 @@ export const Nav20DataSource = {
     children: [
       {
         name: 'linkNav',
-        to: 'banner',
-        children: 'TRANG CHỦ',
-        className: 'menu-item'
-      },
-      {
-        name: 'linkNav',
         to: 'introduce',
         children: 'GIỚI THIỆU',
         className: 'menu-item'
@@ -611,7 +605,7 @@ export const Footer20DataSource = {
       },
       {
         name: 'group',
-        children: 'Hội nghị Công nghệ Trải nghiệm Tài chính Ant',
+        children: 'Liên hệ: (+84) 0377972139',
         className: 'copyright-group'
       },
       {

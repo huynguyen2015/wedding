@@ -60,19 +60,17 @@
 }
 
 @media screen and (max-width: 767px) {
-  .confirmation-wrapper.home-page-wrapper {
+  .confirmation-wrapper {
     padding-bottom: 0;
     box-shadow: none;
     width: 100%;
-    .confirmation {
-      &.home-page {
-        margin: auto;
-        padding-bottom: 0;
-      }
+    .section-title-wrapper {
+      padding: 70px 15px;
     }
-    .content-wrapper {
-      .confirmation-block {
-        max-width: 240px;
+    .confirmation {
+      iframe {
+        width: 100% !important;
+        height: 700px;
       }
     }
   }

@@ -6,6 +6,11 @@
   overflow: hidden;
   padding: 0;
   z-index: 0;
+
+  #banner {
+    min-height: 720px;
+  }
+
   &::before {
     content: '';
     width: 100%;
@@ -246,4 +251,36 @@
 }
 
 @media screen and (max-width: 767px) {
+}
+
+@media (max-width: 480px) {
+  #introduce {
+    #banner {
+      min-height: 532px;
+      margin-bottom: 30px;
+      .banner-info {
+        padding: 0 15px;
+        h1.hero-title {
+          font-size: 45pt;
+          small {
+            display: block;
+          }
+        }
+        &::before {
+          left: -100px;
+        }
+        &::after {
+          right: -100px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  #introduce .banner-info::after,
+  #introduce .banner-info::before {
+    content: '';
+    width: 219px;
+    height: 395px;
+  }
 }

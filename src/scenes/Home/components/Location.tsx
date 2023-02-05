@@ -39,28 +39,24 @@ const Location = ({ dataSource }: IProps) => {
                   <span className="h-lines"></span>
                   <span className="v-lines"></span>
                   <h4 className="has-icon">
-                    <i className="icon-big-church"></i>Ceremony
-                    <small>03:00pm</small>
+                    <i className="icon-big-church"></i>Nhà gái
+                    <small>
+                      vào lúc 11:00 am 12/03/2023 <br /> tại
+                    </small>
                   </h4>
-                  <h5>Birchwood Church</h5>
-                  <p>
-                    4181 Birchwood Ave Seal Beach, CA
-                    <br />
-                    33.776825, -118.059113
-                  </p>
+                  <h5>Cẩm Thắng, Gò Dầu, tỉnh Tây Ninh</h5>
+                  <p>Chợ Cẩm Giang, Tây Ninh</p>
 
                   <div className="info-map-divider"></div>
 
                   <h4 className="has-icon">
-                    <i className="icon-champagne-glasses"></i>Reception
-                    <small>05:30pm</small>
+                    <i className="icon-champagne-glasses"></i>Nhà trai
+                    <small>
+                      vào lúc 11:00 am 25/03/2023 <br /> tại
+                    </small>
                   </h4>
-                  <h5>Old Ranch Country Club</h5>
-                  <p>
-                    29033 West Lake Drive, Agoura Hills, CA
-                    <br />
-                    33.776025, -118.065314
-                  </p>
+                  <h5>Khách sạn Mekong, Đông Hà, Quảng Trị</h5>
+                  <p>Lê Duẩn, Đông Hà, Quảng Trị</p>
                 </div>
               </div>
             </div>

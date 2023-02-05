@@ -12,7 +12,7 @@
   }
   .copyright {
     float: right;
-    >* {
+    > * {
       display: inline-block;
     }
     &-logo {
@@ -45,13 +45,24 @@
 
 @media screen and (max-width: 767px) {
   .footer2-wrapper {
+    height: auto;
     .footer2 {
       font-size: 12px;
       &.home-page {
         padding: 0;
       }
-      >div {
-        width: 90%;
+      .copyright {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 12px;
+        .copyright-logo,
+        .copyright-line {
+          display: none;
+        }
+      }
+      > div {
+        width: 100%;
+        line-height: 28px;
         margin: auto;
       }
     }

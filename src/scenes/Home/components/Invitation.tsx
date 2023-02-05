@@ -22,7 +22,7 @@ const Invitation = () => {
 
               <div className="invite_info">
                 <h2>
-                  Huy <small>&amp;</small> Hoa
+                  Quốc Huy <small>&amp;</small> Quỳnh Hoa
                 </h2>
 
                 <div className="uppercase">

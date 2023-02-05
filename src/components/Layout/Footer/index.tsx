@@ -13,7 +13,7 @@ class Footer extends PureComponent<IProps> {
     return (
       <div {...props} {...dataSource.wrapper}>
         <OverPack {...dataSource.OverPack}>
-          <TweenOne {...dataSource.links}>
+          {/* <TweenOne {...dataSource.links}>
             {dataSource.links.children.map((item, i) => {
               return (
                 <a key={i.toString()} {...item}>
@@ -21,7 +21,7 @@ class Footer extends PureComponent<IProps> {
                 </a>
               )
             })}
-          </TweenOne>
+          </TweenOne> */}
           <TweenOne
             animation={{ x: '+=30', opacity: 0, type: 'from' }}
             key="copyright"
