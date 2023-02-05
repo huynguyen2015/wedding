@@ -1,25 +1,6 @@
 import QueueAnim from 'rc-queue-anim'
 
-interface IProps {
-  dataSource: any
-  isMobile: boolean
-}
-
-const Location = ({ dataSource }: IProps) => {
-  // const [showInfo, setShowInfo] = useState(isMobile)
-
-  const onClick = () => {
-    window.open(dataSource.Content.children.url.children)
-  }
-
-  const markerEnter = () => {
-    // setShowInfo(true)
-  }
-
-  const markerLeave = () => {
-    // setShowInfo(false)
-  }
-
+const Location = () => {
   return (
     <section id="location" className="home-page-wrapper location-wrapper">
       <QueueAnim type="scale">
@@ -65,13 +46,7 @@ const Location = ({ dataSource }: IProps) => {
               className="map-wrapper animate-fade animation-fade"
               data-animation-direction="fade"
               data-animation-delay="100">
-              <div
-                id="map_canvas"
-                className="icon-wrapper"
-                onMouseEnter={markerEnter}
-                onMouseLeave={markerLeave}
-                onClick={onClick}
-                onTouchEnd={onClick}>
+              <div id="map_canvas" className="icon-wrapper">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.7207002771497!2d106.14850235073787!3d11.208288654098412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310b158392d54377%3A0x34bfba3e44bdd8fc!2sCam%20Giang%20Market!5e0!3m2!1sen!2s!4v1674917607655!5m2!1sen!2s"
                   width="100%"

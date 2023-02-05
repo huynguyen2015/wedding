@@ -50,7 +50,7 @@ class Header extends Component<IProps> {
           </TweenOne>
           {isMobile && (
             <div
-              {...dataSource.mobileMenu}
+              className="header2-mobile-menu"
               onClick={() => {
                 this.phoneClick()
               }}>

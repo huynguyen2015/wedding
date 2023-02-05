@@ -1,6 +1,5 @@
 import QueueAnim from 'rc-queue-anim'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHeart } from '@fortawesome/free-solid-svg-icons'
+import { HeartOutlined } from '@ant-design/icons'
 
 const AboutUs = () => {
   return (
@@ -19,7 +18,7 @@ const AboutUs = () => {
                   <span className="v-lines"></span>
                   <div className="content">
                     <h3>
-                      Andrew Miller<small>The Groom</small>
+                      Quốc Huy<small>The Groom</small>
                     </h3>
                     <p>
                       I am so incredibly blessed and excited to spend everyday
@@ -51,8 +50,7 @@ const AboutUs = () => {
               className="divider-about-us animate-fade animation-fade"
               data-animation-direction="fade"
               data-animation-delay="500">
-              {/* <i className="icon-two-hearts"></i> */}
-              <FontAwesomeIcon icon={faHeart} />
+              <HeartOutlined />
             </div>
 
             <div
@@ -66,7 +64,7 @@ const AboutUs = () => {
                   <span className="v-lines"></span>
                   <div className="content">
                     <h3>
-                      Isabella Walker<small>The Bride</small>
+                      Quỳnh Hoa<small>The Bride</small>
                     </h3>
                     <p>
                       She&apos;s everything I&apos;ve always dreamed of and
@@ -109,7 +107,8 @@ const AboutUs = () => {
               </p>
               <img
                 src="assets/images/signature.png"
-                alt="Andrew and Isabella"
+                alt="Quoc Huy & Quynh Hoa"
+                className="signature"
               />
             </div>
           </div>

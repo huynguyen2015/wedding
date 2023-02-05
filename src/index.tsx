@@ -1,6 +1,6 @@
 import './index.css'
 
-import * as ReactDOM from 'react-dom'
+import ReactDOM from 'react-dom/client'
 import * as moment from 'moment-timezone/moment-timezone'
 
 import App from './App'
@@ -29,14 +29,15 @@ abpUserConfigurationService.getAll().then((data) => {
   }
 
   const stores = initializeStores()
-
-  ReactDOM.render(
+  const root = ReactDOM.createRoot(
+    document.getElementById('root') as HTMLElement
+  )
+  root.render(
     <Provider {...stores}>
       <BrowserRouter>
         <App />
       </BrowserRouter>
-    </Provider>,
-    document.getElementById('root') as HTMLElement
+    </Provider>
   )
 
   registerServiceWorker()
