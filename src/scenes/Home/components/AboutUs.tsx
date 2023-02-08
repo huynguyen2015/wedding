@@ -13,7 +13,7 @@ const AboutUs = () => {
               data-animation-delay="300">
               <div className="image">
                 <img src="./assets/images/groom.jpg" />
-                <div className="hover-info neela-style">
+                <div className="hover-info border-effect">
                   <span className="h-lines"></span>
                   <span className="v-lines"></span>
                   <div className="content">
@@ -26,17 +26,17 @@ const AboutUs = () => {
                     </p>
                     <ul className="sn-icons">
                       <li>
-                        <a href="https://www.wiselythemes.com/html/neela/index.html#">
+                        <a href="https://www.facebook.com/nbchuy">
                           <i className="fab fa-instagram-square"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="https://www.wiselythemes.com/html/neela/index.html#">
+                        <a href="https://www.facebook.com/nbchuy">
                           <i className="fab fa-twitter-square"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="https://www.wiselythemes.com/html/neela/index.html#">
+                        <a href="https://www.facebook.com/nbchuy">
                           <i className="fab fa-facebook-square"></i>
                         </a>
                       </li>
@@ -59,7 +59,7 @@ const AboutUs = () => {
               data-animation-delay="400">
               <div className="image">
                 <img src="./assets/images/bride.jpg" />
-                <div className="hover-info neela-style">
+                <div className="hover-info border-effect">
                   <span className="h-lines"></span>
                   <span className="v-lines"></span>
                   <div className="content">
@@ -72,17 +72,17 @@ const AboutUs = () => {
                     </p>
                     <ul className="sn-icons">
                       <li>
-                        <a href="https://www.wiselythemes.com/html/neela/index.html#">
+                        <a href="https://www.facebook.com/Q.h2605">
                           <i className="fab fa-instagram-square"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="https://www.wiselythemes.com/html/neela/index.html#">
+                        <a href="https://www.facebook.com/Q.h2605">
                           <i className="fab fa-twitter-square"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="https://www.wiselythemes.com/html/neela/index.html#">
+                        <a href="https://www.facebook.com/Q.h2605">
                           <i className="fab fa-facebook-square"></i>
                         </a>
                       </li>

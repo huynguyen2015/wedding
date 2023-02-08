@@ -16,7 +16,7 @@ const Location = () => {
               data-animation-direction="from-bottom"
               data-animation-delay="100">
               <div className="location-info">
-                <div className="neela-style">
+                <div className="border-effect">
                   <span className="h-lines"></span>
                   <span className="v-lines"></span>
                   <h4 className="has-icon">

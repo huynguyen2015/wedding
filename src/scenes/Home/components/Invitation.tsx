@@ -9,7 +9,7 @@ const Invitation = () => {
           <h1 className="section-title light">Thiệp mời</h1>
           <div className="invitation-content-wrapper">
             <div
-              className="invite neela-style animate-from-left animation-from-left"
+              className="invite border-effect animate-from-left animation-from-left"
               data-animation-direction="from-left"
               data-animation-delay="100">
               <span className="h-lines"></span>
