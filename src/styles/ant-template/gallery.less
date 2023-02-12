@@ -40,10 +40,25 @@
     box-shadow: none;
     width: 100%;
     .gallery {
-      overflow-x: auto;
-      .gallery-content {
-        width: 1500px;
-        min-height: 330px;
+      .carousel {
+        .slick-track {
+          > div {
+            height: 450px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .lazy-load-image-background {
+            width: 100%;
+            height: auto;
+            img {
+              width: 100%;
+              height: auto;
+              max-height: 400px;
+              object-fit: contain;
+            }
+          }
+        }
       }
       &.home-page {
         margin: auto;
