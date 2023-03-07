@@ -100,7 +100,7 @@ const dataSource = [
       title: { children: 'Di chuyển về Tp HCM' },
       content: {
         children:
-          'Xe lần lượt trả khách tại các địa điểm trước đó. Chưa bao giờ cô dâu & chú rể ý thức được câu nói "Sự hiện diện của các bạn là niềm vinh dự của chúng tôi" đến như vậy. Một lần nữa xin chân thành cám ơn'
+          'Xe lần lượt trả khách tại các địa điểm trước đó. Chưa bao giờ cô dâu & chú rể ý thức được câu nói "Sự hiện diện của quý khách là niềm vinh dự của chúng tôi" đến như vậy. Một lần nữa xin chân thành cám ơn'
       }
     }
   }

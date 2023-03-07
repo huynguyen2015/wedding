@@ -479,7 +479,7 @@ export const Content110DataSource = {
       {
         name: 'content2',
         children:
-          'Chúng tôi rất mong đợi sự hiện diện của các bạn, để sự chuẩn bị được chu đáo trong quá trình di chuyển và bữa tiệc phụ vụ xin hãy cho chúng tôi biết bạn có thể tham dự',
+          'Chúng tôi rất mong đợi sự hiện diện của quý khách, để sự chuẩn bị được chu đáo trong quá trình di chuyển và bữa tiệc phụ vụ xin hãy cho chúng tôi biết bạn có thể tham dự',
         className: 'title-content'
       }
     ]

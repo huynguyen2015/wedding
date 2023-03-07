@@ -26,7 +26,7 @@ const Invitation = () => {
                 </h2>
 
                 <div className="uppercase">
-                  Sự hiện diện của các bạn là niềm vinh hạnh của chúng tôi
+                  Sự hiện diện của quý khách là niềm vinh hạnh của chúng tôi
                 </div>
                 <div className="date">
                   12 Tháng Ba, 2023<small>lúc 11:00 sáng</small>
