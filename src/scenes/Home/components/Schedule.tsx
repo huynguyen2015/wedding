@@ -23,9 +23,34 @@ const dataSource = [
       post: {
         children: 'Giúp cô dâu & chú rể đến sớm tí nhé'
       },
+      time: { children: '08 - 08:30' },
+      title: {
+        children: 'Quận 2, Quận 3. Tập trung & đón khách'
+      },
+      content: {
+        children: '8h30 xe xuất phát sang Tân Bình'
+      }
+    }
+  },
+  {
+    name: 'block1',
+    playScale: 0.3,
+    children: {
+      img: {
+        children:
+          'https://gw.alipayobjects.com/zos/rmsportal/SlFgHDtOTLzccvFrQHLg.png'
+      },
+      icon: {
+        children:
+          'https://gw.alipayobjects.com/zos/rmsportal/qJnGrvjXPxdKETlVSrbe.svg'
+      },
+      name: { children: 'Lưu ý' },
+      post: {
+        children: 'Giúp cô dâu & chú rể đến sớm tí nhé'
+      },
       time: { children: '08:30 - 09:00' },
       title: {
-        children: 'Tập trung & đón khách'
+        children: 'Tân Bình. Tập trung & đón khách'
       },
       content: {
         children:
@@ -34,7 +59,7 @@ const dataSource = [
     }
   },
   {
-    name: 'block1',
+    name: 'block2',
     playScale: 0.3,
     children: {
       img: {
@@ -56,7 +81,7 @@ const dataSource = [
     }
   },
   {
-    name: 'block2',
+    name: 'block3',
     playScale: 0.3,
     children: {
       img: {
@@ -80,7 +105,7 @@ const dataSource = [
     }
   },
   {
-    name: 'block3',
+    name: 'block4',
 
     playScale: 0.3,
     children: {
