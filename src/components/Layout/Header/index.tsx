@@ -14,6 +14,7 @@ class Header extends Component<IProps> {
 
   phoneClick = () => {
     const phoneOpen = !this.state.phoneOpen
+
     this.setState({
       phoneOpen
     })
