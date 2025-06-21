@@ -31,7 +31,7 @@ const Banner = () => {
               data-animation-direction="from-right"
               data-animation-delay="300"
               className="animate-from-right animation-from-right">
-              Quốc Huy
+              Ngọc Hưng
             </span>
             <small
               data-animation-direction="from-top"
@@ -43,7 +43,7 @@ const Banner = () => {
               data-animation-direction="from-left"
               data-animation-delay="300"
               className="animate-from-left animation-from-left">
-              Quỳnh Hoa
+              Phương Nhi
             </span>
           </h1>
 
@@ -51,7 +51,7 @@ const Banner = () => {
             className="info-subtitle light animate-fade animation-fade"
             data-animation-direction="fade"
             data-animation-delay="1000">
-            Tháng 3 <span>12</span> 2023
+            Tháng 7 <span>12</span> 2025
           </div>
 
           <div

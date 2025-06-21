@@ -8,15 +8,7 @@ import 'react-image-lightbox/style.css'
 import 'react-lazy-load-image-component/src/effects/blur.css'
 
 const getImages = () => {
-  const temp = Array.from(Array(41).keys())
-  return temp
-    .filter(
-      (i) =>
-        ![
-          1, 2, 3, 4, 5, 7, 9, 10, 12, 15, 17, 19, 21, 22, 25, 29, 18, 11, 23,
-          32, 13, 30, 34, 35, 36, 37, 38, 39, 40, 14
-        ].includes(i)
-    )
+  return [0, 1, 4, 6, 7, 8, 12, 16, 17]
     .map((i) => `/assets/images/gallery/${i}.jpg`)
     .reverse()
 }

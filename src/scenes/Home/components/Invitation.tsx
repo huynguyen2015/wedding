@@ -22,18 +22,19 @@ const Invitation = () => {
 
               <div className="invite_info">
                 <h2>
-                  Quốc Huy <small>&amp;</small> Quỳnh Hoa
+                  Ngọc Hưng <small>&amp;</small> Phương Nhi
                 </h2>
 
                 <div className="uppercase">
                   Sự hiện diện của quý khách là niềm vinh hạnh của chúng tôi
                 </div>
                 <div className="date">
-                  12 Tháng Ba, 2023<small>lúc 11:00 sáng</small>
+                  12 Tháng Bảy, 2025<small>lúc 11:00 sáng</small>
                 </div>
                 <div className="uppercase">
                   <div style={{ lineHeight: 'normal' }}>
-                    Cẩm Giang, Cẩm Thắng, Tây Ninh
+                    kiệt 09, Khu phố Đại Áng, Phường Đông Lương, Tp Đông Hà,
+                    Quảng Trị
                   </div>
                 </div>
 

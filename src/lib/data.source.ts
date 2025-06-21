@@ -27,19 +27,19 @@ export const Nav20DataSource = {
         to: 'invitation',
         children: 'THIỆP MỜI',
         className: 'menu-item'
-      },
-      {
-        name: 'linkNav',
-        to: 'schedule',
-        children: 'LỊCH TRÌNH',
-        className: 'menu-item'
-      },
-      {
-        name: 'linkNav',
-        to: 'confirmation',
-        children: 'XÁC NHẬN THAM DỰ',
-        className: 'menu-item'
       }
+      // {
+      //   name: 'linkNav',
+      //   to: 'schedule',
+      //   children: 'LỊCH TRÌNH',
+      //   className: 'menu-item'
+      // },
+      // {
+      //   name: 'linkNav',
+      //   to: 'confirmation',
+      //   children: 'XÁC NHẬN THAM DỰ',
+      //   className: 'menu-item'
+      // }
     ]
   },
   mobileMenu: { className: 'header2-mobile-menu' },
@@ -605,7 +605,7 @@ export const Footer20DataSource = {
       },
       {
         name: 'group',
-        children: 'Liên hệ: (+84) 0377972139',
+        children: 'Liên hệ: (+84) 093.144.1222',
         className: 'copyright-group'
       },
       {

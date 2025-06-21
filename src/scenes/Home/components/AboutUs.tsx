@@ -18,7 +18,7 @@ const AboutUs = () => {
                   <span className="v-lines"></span>
                   <div className="content">
                     <h3>
-                      Quốc Huy<small>The Groom</small>
+                      Ngọc Hưng<small>The Groom</small>
                     </h3>
                     <p>
                       I am so incredibly blessed and excited to spend everyday
@@ -64,7 +64,7 @@ const AboutUs = () => {
                   <span className="v-lines"></span>
                   <div className="content">
                     <h3>
-                      Quỳnh Hoa<small>The Bride</small>
+                      Phương Nhi<small>The Bride</small>
                     </h3>
                     <p>
                       She&apos;s everything I&apos;ve always dreamed of and
@@ -107,7 +107,7 @@ const AboutUs = () => {
               </p>
               <img
                 src="assets/images/signature.png"
-                alt="Quoc Huy & Quynh Hoa"
+                alt="Ngoc Hung & Phuong Nhi"
                 className="signature"
               />
             </div>

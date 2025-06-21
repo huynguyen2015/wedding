@@ -3,8 +3,8 @@ import './index.less'
 import AboutUs from './components/AboutUs'
 import Gallery from './components/Gallery'
 import Location from './components/Location'
-import Schedule from './components/Schedule'
-import Confirmation from './components/Confirmation'
+// import Schedule from './components/Schedule'
+// import Confirmation from './components/Confirmation'
 import Invitation from './components/Invitation'
 import { enquireScreen } from 'enquire-js'
 import CarouselGallery from './components/Carousel'
@@ -22,8 +22,8 @@ const Home = () => {
       {isMobile ? <CarouselGallery></CarouselGallery> : <Gallery />}
       <Invitation />
       <Location />
-      <Schedule />
-      <Confirmation />
+      {/* <Schedule /> */}
+      {/* <Confirmation /> */}
     </>
   )
 }
