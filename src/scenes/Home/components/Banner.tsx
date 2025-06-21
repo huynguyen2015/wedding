@@ -53,6 +53,12 @@ const Banner = () => {
             data-animation-delay="1000">
             Tháng 7 <span>12</span> 2025
           </div>
+          <div
+            className="info-subtitle small light animate-fade animation-fade"
+            data-animation-direction="fade"
+            data-animation-delay="1000">
+            Nhà nữ ngày 11/07/2025
+          </div>
 
           <div
             data-animation-direction="fade"
